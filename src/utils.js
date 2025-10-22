@@ -3,8 +3,8 @@ export function getLastPath() {
     return path.split('/').pop();
 }
 
-export function injectCSS() {
+export function injectCSS(css) {
     const style = document.createElement('style');
-    style.textContent = cssText;
+    style.textContent = css;
     document.head.appendChild(style);
 }
