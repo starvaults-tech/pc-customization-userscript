@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx esbuild main.js --bundle --minify --outfile=main.min.js --watch",
-    "build": "npx esbuild main.js --bundle --minify --outfile=main.min.js",
+    "dev": "node build.mjs watch",
+    "build": "node build.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
