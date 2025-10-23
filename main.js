@@ -5,6 +5,9 @@ import { appDownload } from "./src/js/appDownload.js";
 import { financing } from "./src/js/financing.js";
 
 import appDownload_css from './src/css/appDownload.css';
+import global_css from './src/css/global.css';
+
+injectCSS(global_css);
 
 const page = getLastPath();
 switch (page) {

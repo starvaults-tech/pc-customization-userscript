@@ -1,0 +1,17 @@
+.footer-box .temp-footer .temp-footer-logo .temp-footer-communication {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-box .temp-footer-communication li {
+    margin: 0 !important;
+    border: 1px solid #888;
+    border-radius: 5px;
+    height: 24px;
+    padding: 2px;
+}
+
+
+.footer-box .temp-footer-communication li a {
+    display: block;
+}

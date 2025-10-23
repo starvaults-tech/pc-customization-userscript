@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node build.mjs watch",
     "build": "node build.mjs",
+    "sha": "git rev-parse HEAD",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
