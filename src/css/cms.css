@@ -1,7 +1,7 @@
-#app.dark-theme div {
+#app.dark-theme div.content-box {
     --text-2: #fff;
 }
 
-#app.light-theme div {
+#app.light-theme div.content-box {
     --text-2: #000;
 }
