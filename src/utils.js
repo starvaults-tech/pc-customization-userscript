@@ -3,6 +3,10 @@ export function getLastPath() {
     return path.split('/').pop();
 }
 
+export function isCMS() {
+    return document.location.pathname.includes('/cms/');
+}
+
 export function injectCSS(css) {
     const style = document.createElement('style');
     style.textContent = css;
