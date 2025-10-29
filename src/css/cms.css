@@ -1,3 +1,7 @@
-div, div.content-box {
+#app.dark-theme div {
+    --text-2: #fff;
+}
+
+#app.light-theme div {
     --text-2: #000;
 }
