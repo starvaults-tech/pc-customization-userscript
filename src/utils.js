@@ -7,6 +7,10 @@ export function isCMS() {
     return document.location.pathname.includes('/cms/');
 }
 
+export function isDark() {
+    return document.querySelector('#app')?.classList?.contains('dark-theme');
+}
+
 export function injectCSS(css) {
     const style = document.createElement('style');
     style.textContent = css;
