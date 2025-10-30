@@ -5,6 +5,8 @@ import { appDownload } from "./src/js/appDownload.js";
 import { financing } from "./src/js/financing.js";
 import { gridStrategy } from "./src/js/gridStrategy.js";
 import { newOtc } from "./src/js/newOtc.js";
+import { futuresbonus } from "./src/js/futuresbonus.js";
+
 
 import appDownload_css from './src/css/appDownload.css';
 import global_css from './src/css/global.css';
@@ -41,6 +43,10 @@ injectCSS(global_css);
         case 'newOtc':
             newOtc();
             injectCSS(newOtc_css);
+            break;
+
+        case 'futuresbonus':
+            futuresbonus();
             break;
 
         default:
