@@ -10,11 +10,11 @@ export function futuresbonus() {
         banner.style.backgroundSize = 'auto';
     };
     waitFor('.futuresbonus .banner').then(banner => {
-        applyStyle(banner);
-        const observer = new MutationObserver(() => {
-            if (banner.style.backgroundImage.includes(getUrl())) return;
+        let count = 0;
+        const timer = setInterval(() => {
             applyStyle(banner);
-        });
-        observer.observe(banner, { attributes: true, attributeFilter: ['style'] });
+            count += 100;
+            if (count >= 3000) clearInterval(timer);
+        }, 100);
     });
 }
