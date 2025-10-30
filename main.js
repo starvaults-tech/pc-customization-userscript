@@ -15,7 +15,7 @@ injectCSS(global_css);
 
 (()=>{
     const page = getLastPath();
-    if (isCMS) {
+    if (isCMS()) {
         injectCSS(cms_css);
         return;
     }

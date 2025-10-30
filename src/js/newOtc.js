@@ -8,7 +8,7 @@ export function newOtc() {
             light : ''
         };
         const otcImg = document.querySelector('.quick-left-logo img');
-        // if (!otcImg) return;
+        if (!otcImg) return;
         otcImg.src = isDark() ? imgUrl.dark : imgUrl.dark;
     }).catch(err => console.error(err));
 }
