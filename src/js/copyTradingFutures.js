@@ -1,3 +1,5 @@
+import { waitFor, isDark } from '../utils.js';
+
 export function copyTradingFutures() {
     const darkUrl  = 'https://saas2-s3-public-01.s3.ap-northeast-1.amazonaws.com/1835/upload/d3bac1663d3828f59f5d24163b708734.png';
     const lightUrl = '';
