@@ -8,10 +8,13 @@ import { newOtc } from "./src/js/newOtc.js";
 import { futuresbonus } from "./src/js/futuresbonus.js";
 import { login } from "./src/js/login.js";
 
+import copyTradingFutures_css from './src/css/futuresbonus.css';
 import appDownload_css from './src/css/appDownload.css';
+import futuresbonus_css from './src/css/futuresbonus.css';
 import global_css from './src/css/global.css';
 import cms_css from './src/css/cms.css';
 import newOtc_css from './src/css/newOtc.css';
+
 
 injectCSS(global_css);
 
@@ -25,6 +28,7 @@ injectCSS(global_css);
     switch (page) {
         case 'copyTradingFutures':
             copyTradingFutures();
+            injectCSS(copyTradingFutures_css);
             break;
 
         case 'appDownload':
@@ -47,6 +51,7 @@ injectCSS(global_css);
 
         case 'futuresbonus':
             futuresbonus();
+            injectCSS(futuresbonus_css);
             break;
 
         case 'login':
