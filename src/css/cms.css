@@ -5,3 +5,7 @@
 #app.light-theme div.content-box {
     --text-2: #000;
 }
+
+.notice-info .content-text .main-text {
+    line-height: 0.5 !important;
+}
