@@ -14,7 +14,7 @@ import futuresbonus_css from './src/css/futuresbonus.css';
 import global_css from './src/css/global.css';
 import cms_css from './src/css/cms.css';
 import newOtc_css from './src/css/newOtc.css';
-
+import competition_css from './src/css/competition.css';
 
 injectCSS(global_css);
 
@@ -56,6 +56,10 @@ injectCSS(global_css);
 
         case 'login':
             login();
+            break;
+
+        case 'competition':
+            injectCSS(competition_css);
             break;
 
         default:

@@ -1,0 +1,14 @@
+.coRace-banner-content .info {
+  padding-top: 450px !important;
+  text-align: center;
+}
+
+.coRace-banner-content .time-md .item,
+.coRace-banner-content .text {
+  font-size: 20pt !important;
+}
+
+.coRace-banner-content .time-md .item {
+  border: none !important;
+  width: auto !important;
+}
