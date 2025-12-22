@@ -3,6 +3,10 @@ export function getLastPath() {
     return path.split('/').pop();
 }
 
+export function isHome() {
+    return document.location.pathname?.split('/')?.filter(e=>e)?.length===1;
+}
+
 export function isCMS() {
     return document.location.pathname.includes('/cms/');
 }

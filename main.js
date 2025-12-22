@@ -1,4 +1,4 @@
-import { getLastPath, isCMS, isH5, injectCSS } from "./src/utils.js"
+import { getLastPath, isCMS, isHome, isH5, injectCSS } from "./src/utils.js"
 
 import { copyTradingFutures } from "./src/js/copyTradingFutures.js";
 import { appDownload } from "./src/js/appDownload.js";
@@ -7,6 +7,7 @@ import { gridStrategy } from "./src/js/gridStrategy.js";
 import { newOtc } from "./src/js/newOtc.js";
 import { futuresbonus } from "./src/js/futuresbonus.js";
 import { login } from "./src/js/login.js";
+import { home } from "./src/js/home.js";
 
 import copyTradingFutures_css from './src/css/futuresbonus.css';
 import appDownload_css from './src/css/appDownload.css';
@@ -36,6 +37,11 @@ injectCSS(global_css);
             default:
                 break;
         }
+    }
+
+    if (isHome()) {
+        home();
+        return;
     }
 
     switch (page) {
