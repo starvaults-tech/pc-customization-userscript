@@ -1,7 +1,7 @@
 import { waitFor, isDark } from '../utils.js';
 
 export function home (){
-    waitFor('#app.pc')
+    waitFor('#app[data-client=pc]')
     .then(() => {
         const language = document.location.pathname.split('/').filter(e=>e).pop() || '';
         const imgUrl = "https://saas2-s3-public-01.s3.ap-northeast-1.amazonaws.com/1835/upload/e14abb971402402fc2711fb26e53c7f8.gif";
