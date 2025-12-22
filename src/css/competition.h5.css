@@ -1,0 +1,18 @@
+#app {
+  --main-5: rgb(255, 213, 50)
+}
+
+#app .count-down {
+  padding-top: 360px !important;
+  text-align: center;
+}
+
+#app .count-down .item {
+  border: 0 !important;
+  color: var(--main-5)!important;
+}
+
+.reg-btn {
+  color: black !important;
+  background-color: var(--main-5) !important;
+}

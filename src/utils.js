@@ -7,6 +7,10 @@ export function isCMS() {
     return document.location.pathname.includes('/cms/');
 }
 
+export function isH5() {
+    return document.location.host.includes('mco.star-vaults.com');
+}
+
 export function isDark() {
     return document.querySelector('#app')?.classList?.contains('dark-theme');
 }

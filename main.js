@@ -1,4 +1,4 @@
-import { getLastPath, isCMS, injectCSS } from "./src/utils.js"
+import { getLastPath, isCMS, isH5, injectCSS } from "./src/utils.js"
 
 import { copyTradingFutures } from "./src/js/copyTradingFutures.js";
 import { appDownload } from "./src/js/appDownload.js";
@@ -15,6 +15,7 @@ import global_css from './src/css/global.css';
 import cms_css from './src/css/cms.css';
 import newOtc_css from './src/css/newOtc.css';
 import competition_css from './src/css/competition.css';
+import competition_h5_css from './src/css/competition.h5.css';
 
 injectCSS(global_css);
 
@@ -23,6 +24,18 @@ injectCSS(global_css);
     if (isCMS()) {
         injectCSS(cms_css);
         return;
+    }
+
+    if (isH5()) {
+        switch (page) {
+
+            case 'competition':
+                injectCSS(competition_h5_css);
+                break;
+
+            default:
+                break;
+        }
     }
 
     switch (page) {
