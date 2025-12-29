@@ -51,6 +51,5 @@ function createCatImg() {
 export function home (){
     waitFor('#app[data-client=pc]')
     .then(() => {
-        createCatImg();
     }).catch(err => console.error(err));
 };
