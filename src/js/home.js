@@ -23,19 +23,19 @@ function createCatImg() {
     container.appendChild(imgTag);
 
     const textTag = document.createElement('div');
-    // switch (language) {
-    //     case 'zh_TC':
-    //         textTag.innerText = '聖誕狂歡合約交易賽';
-    //         break;
-    //     case 'zh_CN':
-    //         textTag.innerText = '圣诞狂欢合约交易赛';
-    //         break;
-    //     case 'en_US':
-    //         textTag.innerText = 'Xmas Futures Competition';
-    //         break;
-    //     default:
-    //         break;
-    // }
+    switch (language) {
+        case 'zh_TC':
+            textTag.innerText = '聖誕狂歡合約交易賽';
+            break;
+        case 'zh_CN':
+            textTag.innerText = '圣诞狂欢合约交易赛';
+            break;
+        case 'en_US':
+            textTag.innerText = 'Xmas Futures Competition';
+            break;
+        default:
+            break;
+    }
     textTag.style.position = 'absolute';
     textTag.style.bottom = '-20px';
     textTag.style.left = '50%';
@@ -51,6 +51,6 @@ function createCatImg() {
 export function home (){
     waitFor('#app[data-client=pc]')
     .then(() => {
-        createCatImg();
+        // createCatImg();
     }).catch(err => console.error(err));
 };
