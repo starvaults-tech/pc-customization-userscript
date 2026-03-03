@@ -42,7 +42,7 @@ const reportOutputSize = {
                 const outSizeKB = (size / 1024).toFixed(1);
                 const sourceSizeKB = (sourceSize / 1024).toFixed(1);
                 console.log(`\x1b[37m[\x1b[32mwatch\x1b[0m\x1b[37m] build \x1b[39m${outFile}\x1b[37m done - compressed ${ratio.toFixed(1)}% (${sourceSizeKB}kB → ${outSizeKB}kB)\x1b[0m`);
-            } catch {}
+            } catch { }
         });
     },
 };

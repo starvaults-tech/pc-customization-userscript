@@ -4,7 +4,7 @@ export function getLastPath() {
 }
 
 export function isHome() {
-    return document.location.pathname?.split('/')?.filter(e=>e)?.length===1;
+    return document.location.pathname?.split('/')?.filter(e => e)?.length === 1;
 }
 
 export function isCMS() {

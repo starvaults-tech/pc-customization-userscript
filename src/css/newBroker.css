@@ -1,0 +1,69 @@
+
+/* --- 背景色修改 --- */
+section.newBroker {
+	background-color: var(--fill-2) !important;
+}
+
+/* --- 邀請方式區塊修改 --- */
+.newBroker .newBroker-banner-text{
+background-color:var(--fill-3) !important;
+border-style:none !important;
+}
+
+ /* --- 邀請方式文字修改 --- */
+ .newBroker .newBroker-banner-text .inviteCodeManagement{
+ color:var(--text-1)!important
+ }
+ /* --- 邀請碼邀請連結文字修改 --- */
+ .newBroker .newBroker-banner-text .invite-box{
+color:var(--text-2) !important
+ }
+
+ /* --- 邀請碼邀請連結文字修改 --- */
+.newBroker .newBroker-banner-text .invite-box .invite-value{
+color:var(--text-1)  !important;
+background-color:var(--fill-2) !important;
+}
+
+ /* ---連結邀請input修改 --- */
+.newBroker .newBroker-banner-text .invite-box .invite-value input{
+color:var(--text-1)
+}
+
+ /* ---三步獲取交易返傭文字修改 --- */
+.newBroker-title{
+color:var(--text-1)!important
+}
+
+/* ---三步獲取交易返傭內容文字修改 --- */
+.newBroker-step-box .newBroker-step-img p{
+color:var(--text-1)!important;
+font-size:14px !important;
+}
+
+/* ---三步獲取交易返傭內容線條修改 --- */
+.newBroker-step-line{
+background-color:rgb(47, 47, 47)!important;
+}
+
+/* ---現貨經紀人返傭總覽內容修改 --- */
+.newBroker .newBroker-return-info .newBroker-info-box .newBroker-info-list .newBroker-info-list-item .newBroker-info-list-val{
+color:var(--text-1) !important
+}
+
+/* ---現貨經紀人返傭總覽_合約經紀人返傭表格修改 --- */
+.newBroker .newBroker-return-info .newBroker-title-return-box {
+background:var(--fill-3) !important;
+border:none !important
+}
+
+/* ---參與返傭幣種_返傭幣種文字修改 ---*/
+.newBroker .newBroker-return-info .newBroker-title-return-symbol .newBroker-title-return-value {
+color:var(--text-1)!important;
+}
+.newBroker .newBroker-return-info .newBroker-title-return-symbol div{
+color:var(--main-2)!important;
+}
+.newBroker .newBroker-features .newBroker-features-list .newBroker-features-item .newBroker-features-note1{
+color:var(--text-1)!important;
+}
