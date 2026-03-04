@@ -1,4 +1,4 @@
-import { isDark, waitFor, WaitFor } from '../utils.js'
+import { isDark, waitFor } from '../utils.js'
 
 export function newBroker() {
     const ImgUrls = [
