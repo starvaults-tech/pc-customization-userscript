@@ -8,11 +8,54 @@ export function newBroker() {
     ];
     const applyImage = () => {
         const imgs = document.querySelectorAll('.newBroker-features-item .newBroker-features-img');
-        imgs.forEach((item, index) => { item.src = ImgUrls[index] })
+        imgs.forEach((item, index) => { item.src = ImgUrls[index]; item.style.animationDelay = `${index * 2}s`; })
     }
     waitFor('#app').then(() => {
         waitFor('.newBroker-features-item .newBroker-features-img').then(() => {
             applyImage();
-        }).catch(err => console.error(err))
+        }).catch(err => console.error(err));
+ // banner 背景（僅深色模式）
+        const darkUrl = 'https://saas2-s3-public-01.s3.ap-northeast-1.amazonaws.com/1835/upload/b65044880ab7f0ffe85caef435947569.jpg';
+        const applyStyle = (banner) => {
+            if (!isDark()) return;
+            banner.style.backgroundImage = `url(${darkUrl})`;
+            banner.style.backgroundPosition = '100% center';
+            banner.style.backgroundSize = 'auto 110%';
+            banner.style.minHeight = '400px';
+        };
+        waitFor('.newBroker-banner').then(banner => {
+            let count = 0;
+            const timer = setInterval(() => {
+                applyStyle(banner);
+                count += 100;
+                if (count >= 3000) clearInterval(timer);
+            }, 100);
+        });
+ // 三步獲取交易返傭圖片
+        waitFor('.newBroker-step-box img').then(() => {
+            const threeStepsImg = document.querySelectorAll('.newBroker-step-box img');
+            document.querySelectorAll('.newBroker-step-line').forEach((line, index) => {
+                line.style.setProperty('--delay', `${index * 1.5}s`);
+            });
+
+            const duration = 1500;
+            const floatImg = (index) => {
+                const img = threeStepsImg[index];
+                img.style.animation = 'none';
+                void img.offsetWidth;
+                img.style.animation = 'float 1s ease-in-out';
+            };
+            const runSequence = () => {
+                threeStepsImg.forEach((_, index) => {
+                    setTimeout(() => {
+                        floatImg(index);
+                        if (index === threeStepsImg.length - 1) {
+                            setTimeout(runSequence, duration);
+                        }
+                    }, index * duration);
+                });
+            };
+            runSequence();
+        });
     }).catch(err => console.error(err))
 }
