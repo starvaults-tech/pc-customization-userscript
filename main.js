@@ -23,6 +23,7 @@ import competition_h5_css from './src/css/competition.h5.css';
 import newBroker_css from './src/css/newBroker.css';
 import promotion_css from './src/css/promotion.css';
 import taskCenter_css from './src/css/taskCenter.css';
+import financing_css from './src/css/financing.css';
 
 injectCSS(global_css);
 
@@ -63,6 +64,7 @@ injectCSS(global_css);
 
         case 'financing':
             financing();
+            injectCSS(financing_css);
             break;
 
         case 'gridStrategy':
