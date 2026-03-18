@@ -10,6 +10,7 @@ import { login } from "./src/js/login.js";
 import { home } from "./src/js/home.js";
 import { newBroker } from "./src/js/newBroker.js";
 import {promotion} from "./src/js/promotion.js";
+import { taskCenter } from "./src/js/taskCenter.js";
 
 import copyTradingFutures_css from './src/css/futuresbonus.css';
 import appDownload_css from './src/css/appDownload.css';
@@ -21,6 +22,7 @@ import competition_css from './src/css/competition.css';
 import competition_h5_css from './src/css/competition.h5.css';
 import newBroker_css from './src/css/newBroker.css';
 import promotion_css from './src/css/promotion.css';
+import taskCenter_css from './src/css/taskCenter.css';
 
 injectCSS(global_css);
 
@@ -94,8 +96,12 @@ injectCSS(global_css);
             promotion();
             injectCSS(promotion_css);
             break;
-
-        default:
+        case 'taskCenter':
+            taskCenter();
+            injectCSS(taskCenter_css);
+            break;
+        
+            default:
             break;
     }
 })();

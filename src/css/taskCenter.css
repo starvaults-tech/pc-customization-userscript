@@ -1,0 +1,13 @@
+ .banner-pice.text-1-cl {
+      color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,0.9), 2px 2px 8px rgba(0,0,0,1);
+    }
+
+    .banner-text.text-1-cl{
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,0.9), 2px 2px 8px rgba(0,0,0,1);
+    }
+
+    .banner-describe.text-1-cl{
+    color:var(--text-3) !important;
+    }
